@@ -1,33 +1,33 @@
 {
-  "expo": {
-    "name": "my-app",
-    "slug": "my-app",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "production": {}
+  },
+  "extra": {
+    "eas": {
+      "projectId": "a18c66df-3277-4ff7-b9e8-b3431d7a49c1"
+    }
+  },
+  "expo": {
+    "android": {
+      "package": "com.krivalcevich.myapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a18c66df-3277-4ff7-b9e8-b3431d7a49c1"
+      }
     }
   }
 }
